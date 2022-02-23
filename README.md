@@ -20,3 +20,7 @@ This notebook explores the application of deep learning to forecast gangue (*%si
 - Is it possible to forecast *%silica in concentrate* without using the data of *%iron in concentrate*?
   
 The project repository includes interactive charts displaying the predicted (1 hr before results) and actual gangue (%silica) content.
+
+ <p style="text-align:center;">
+    <img width="800" alt="Silica in Concentrate - Actual vs. Forecasted Values - LSTM (Long Short Term Memory)" src="https://github.com/patty-olanterns/mining_process_data/blob/main/Silica%20in%20Concentrate_Actual%20Values%20and%20Forecasts%20by%20LSTM.png?raw=true">
+ 
