@@ -20,3 +20,7 @@ This notebook explores the application of deep learning to forecast gangue (*%si
 - Is it possible to forecast *%silica in concentrate* without using the data of *%iron in concentrate*?
   
  
+# Results 
+ 
+<p style="text-align:center;">
+    <img width="400" alt="Reverse cationic flotation of iron ore" src="https://github.com/ginsaputra/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
