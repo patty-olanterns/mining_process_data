@@ -19,8 +19,32 @@ This notebook explores the application of deep learning to forecast gangue (*%si
 - How many steps (hours) ahead can *%silica in concentrate* be forecasted?
 - Is it possible to forecast *%silica in concentrate* without using the data of *%iron in concentrate*?
   
+# Data Visual Summary
  
-# Results 
+ # Correlation Heatmap - Gangue vs. Features
  
-<p style="text-align:center;">
-    <img width="400" alt="Reverse cationic flotation of iron ore" src="https://github.com/ginsaputra/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
+ <p style="text-align:center;">
+    <img width="800" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
+  
+ # Correlation Heatmap - Gangue vs. Features
+ 
+ <p style="text-align:center;">
+    <img width="800" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
+  
+# Training_History_Losses_Graph
+ 
+ <p style="text-align:center;">
+    <img width="800" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/Training_History_Losses_Graph.png?raw=true">
+  
+# Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
+ 
+ <p style="text-align:center;">
+    <img width="800" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM.png?raw=true">
+ 
+ 
+ # Conclusion
+A deep learning approach using LSTM was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. The forecasts thus show a promising method for process engineers to make timely assessment of concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
+
+Finally, although LSTM implementation in this notebook has met the objectives, it will benefit from further exploration:
+- Forecasting with smaller lag timesteps. For example, a 30-minute lag for the features/inputs.
+- Analysis of feature importance in order to understand which parameters of the flotation process greatly affect *%silica in concentrate*. This ensures that the important parameters are adjusted accordingly.
