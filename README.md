@@ -21,10 +21,11 @@ This notebook explores the application of deep learning to forecast gangue (*%si
   
 # Data Visual Summary
  
- # Correlation Heatmap - Gangue vs. Features
+ # Correlation Heatmap - Gangue (CONC_SILICA) vs. Features
  
   The following chart displays the correlation between training variables and
-  the target variable CONC_SILICA (% Silica Concentrate).
+  the target variable CONC_SILICA (% Silica Concentrate). This correlation plot is BEFORE CONC_IRON is dropped
+  as a training feature.
  
  <p style="text-align:center;">
     <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/blob/main/IronMiningProcessCorrelationHeatmap.png?raw=true">
@@ -65,7 +66,7 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  
  
 # Conclusion
-A deep learning approach using RF (Random Forest Regressor) and LSTM (Long Short Term Memory) was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result .
+A deep learning approach using RF (Random Forest Regressor) and LSTM (Long Short Term Memory) was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result.
 
 A **RMSE of 0.72** was achieved using the LSTM model. It performed better than the Random Forest model which had 
 a **RMSE of 0.77.**
