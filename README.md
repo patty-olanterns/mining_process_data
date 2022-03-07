@@ -53,21 +53,20 @@ This notebook explores the application of deep learning to forecast gangue (*%si
   
   For the LSTM method (Long Short Term Memory), a RMSE of 0.708 was achieved.  This is lower
   than the result achieved for a RandomForestRegressor model (0.77), and is the better model of
-  the two.
+  the two!
   
- 
  <p style="text-align:center;">
     <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/blob/main/SilicaInConcentrateActualVSForecastLSTM.png?raw=true">
  
  
- # Conclusion
-A deep learning approach using LSTM and RandomForestRegression was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. 
-  
+# Conclusion
+A deep learning approach using RF (Random Forest Regressor) and LSTM (Long Short Term Memory) was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result .
+
+A **RMSE of 0.72** was achieved using the LSTM model. It performed better than the Random Forest model which had 
+a **RMSE of 0.77.**
+
+
 In general, the lower the value of the RMSE the better. Recall that the RMSE is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset. The lower the RMSE, the better a given model is able to “fit” a dataset.[https://www.statology.org/how-to-interpret-rmse/]
 
-For this model an RMSE of 0.71 was achieved for the LSTM model and 0.77 for the RandomForest model. While there is room for improvement, the forecasts are a method for process engineers to assess concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
-  
-
-Finally, although LSTM implementation in this notebook has met the objectives, it will benefit from further exploration:
+Although LSTM implementation in this notebook has met the objectives, it will benefit from further exploration:
 - Forecasting with smaller lag timesteps. For example, a 30-minute lag for the features/inputs.
-- Analysis of feature importance in order to understand which parameters of the flotation process greatly affect *%silica in concentrate*. This ensures that the important parameters are adjusted accordingly.
