@@ -13,7 +13,7 @@ A separation of minerals by exploiting difference of surface properties (hydroph
 <p style="text-align:center;">
     <img width="400" alt="Reverse cationic flotation of iron ore" src="https://github.com/ginsaputra/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
 
-Flotation concentrate is periodically sampled to determine its purity (i.e., *%valuable*, *%gangue*). Higher *%gangue* in the concentrate is undesirable as it indicates that most valuable minerals had gone into the tailing. Purity measurement is usually done in a lab and can take some time before process engineers can make any adjustments based on the results. A timely investigation of concentrate purity is, therefore, a fundamental aspect for the control and optimization of the flotation process.
+Flotation concentrate is periodically sampled to determine its purity (i.e., *%valuable*, *%gangue*). Higher *%gangue* in the concentrate is undesirable as it indicates that most valuable minerals had gone into the tailings. Purity measurement is usually done in a lab and can take some time before process engineers can make any adjustments based on the results. A timely investigation of concentrate purity is, therefore, a fundamental aspect for the control and optimization of the flotation process.
 
 This notebook explores the application of deep learning to forecast gangue (*%silica*) in the flotation concentrate. The forecast will help process engineers assess purity of flotation concentrate and take corrective actions in advance. More specifically, the goal is to tackle the following tasks:
 - How many steps (hours) ahead can *%silica in concentrate* be forecasted?
@@ -23,34 +23,50 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  
  # Correlation Heatmap - Gangue vs. Features
  
+  The following chart displays the correlation between training variables and
+  the target variable CONC_SILICA (% Silica Concentrate).
+ 
  <p style="text-align:center;">
     <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/blob/main/IronMiningProcessCorrelationHeatmap.png?raw=true">
   
- # Correlation Heatmap - Gangue vs. Features
- 
+ # Mineral Content - Feed And Concentrate
+  
+  This chart displays the percentage (%) of mineral content(Iron and Silica (Gangue) at a specific time
+  interval. Feed refers to the raw product entering the process plant. CONC_IRON and CONC_SILICA
+  are the percentage (%) of Iron and Silica (Gangue) in the Flotation Concentrate.
+  
  <p style="text-align:center;">
-    <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/blob/main/MineralContentFeedAndConcentrate.png?raw=true">
+    <img width="400" alt="Mineral Content Feed And Flotation Concentrate" src="https://github.com/patty-olanterns/mining_process_data/blob/main/MineralContentFeedAndConcentrate.png?raw=true">
   
 # Training_History_Losses_Graph
  
  <p style="text-align:center;">
     <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/main/TrainingHistoryLossesGraph.png?raw=true">
   
-# Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
- 
- <p style="text-align:center;">
-    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/blob/main/SilicaInConcentrateActualVSForecastLSTM.png?raw=true">
-  
+
  # SilicaInConcentrateActualVSForecastRandomForest
  
  <p style="text-align:center;">
     <img width="400" alt="SilicaInConcentrateActualVSForecastRandomForest" src="https://github.com/patty-olanterns/mining_process_data/blob/main/SilicaInConcentrateActualVSForecastRandomForest.png?raw=true">
+  
+ # Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
+  
+  For the LSTM method (Long Short Term Memory), a RMSE of 0.708 was achieved.  This is lower
+  than the result achieved for a RandomForestRegressor model (0.77), and is the better model of
+  the two.
+  
+ 
+ <p style="text-align:center;">
+    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/blob/main/SilicaInConcentrateActualVSForecastLSTM.png?raw=true">
  
  
  # Conclusion
-A deep learning approach using LSTM was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. 
- 
-For this model an RMSE of 0.77 was achieved. While there is room for improvement, the forecasts are a method for process engineers to assess concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
+A deep learning approach using LSTM and RandomForestRegression was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. 
+  
+In general, the lower the value of the RMSE the better. Recall that the RMSE is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset. The lower the RMSE, the better a given model is able to “fit” a dataset.[https://www.statology.org/how-to-interpret-rmse/]
+
+For this model an RMSE of 0.71 was achieved for the LSTM model and 0.77 for the RandomForest model. While there is room for improvement, the forecasts are a method for process engineers to assess concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
+  
 
 Finally, although LSTM implementation in this notebook has met the objectives, it will benefit from further exploration:
 - Forecasting with smaller lag timesteps. For example, a 30-minute lag for the features/inputs.
