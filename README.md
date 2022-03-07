@@ -24,22 +24,22 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  # Correlation Heatmap - Gangue vs. Features
  
  <p style="text-align:center;">
-    <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.jpeg?raw=true">
+    <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
   
  # Correlation Heatmap - Gangue vs. Features
  
  <p style="text-align:center;">
-    <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.jpeg?raw=true">
+    <img width="400" alt="Gangue Correlation Heatmap" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/reverse-cationic-flotation-iron-silica.png?raw=true">
   
 # Training_History_Losses_Graph
  
  <p style="text-align:center;">
-    <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/Training_History_Losses_Graph.jpeg?raw=true">
+    <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/Training_History_Losses_Graph.png?raw=true">
   
 # Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
  
  <p style="text-align:center;">
-    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM.jpeg?raw=true">
+    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://github.com/patty-olanterns/mining_process_data/Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM.png?raw=true">
  
  
  # Conclusion
