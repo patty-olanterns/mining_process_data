@@ -31,14 +31,20 @@ This notebook explores the application of deep learning to forecast gangue (*%si
   
  # Mineral Content - Feed And Concentrate
   
-  This chart displays the percentage (%) of mineral content(Iron and Silica (Gangue) at a specific time
-  interval. Feed refers to the raw product entering the process plant. CONC_IRON and CONC_SILICA
+  This chart displays the percentage (%) of mineral content(Iron and Silica) at a specific time
+  interval. IRON_FEED AND SILICA_FEED refers to the raw product entering the process plant. CONC_IRON and CONC_SILICA
   are the percentage (%) of Iron and Silica (Gangue) in the Flotation Concentrate.
   
  <p style="text-align:center;">
     <img width="400" alt="Mineral Content Feed And Flotation Concentrate" src="https://github.com/patty-olanterns/mining_process_data/blob/main/MineralContentFeedAndConcentrate.png?raw=true">
   
 # Training_History_Losses_Graph
+  
+  The following chart is a breakdown of the LSTM Model and the training losses (MAE - Mean Absolute Error) for 
+  training and validation data.
+  
+  The model runs 100 times (epochs) and the lowest loss number is where
+  the model is fitted and performing at its best!
  
  <p style="text-align:center;">
     <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/main/TrainingHistoryLossesGraph.png?raw=true">
