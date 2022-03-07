@@ -1,7 +1,7 @@
 
 
  <b><p style="text-align:center;">
-    <font size ="12" color ="Black">
+    <font size ="24" color ="Black">
         Gangue Forecast in Flotation Concentrate in a Mine Mill process facility
     </font>
 </b>
