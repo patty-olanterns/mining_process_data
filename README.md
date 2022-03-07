@@ -43,13 +43,12 @@ This notebook explores the application of deep learning to forecast gangue (*%si
   The following chart is a breakdown of the LSTM Model and the training losses (MAE - Mean Absolute Error) for 
   training and validation data.
   
-  The model runs 100 times (epochs) and the lowest loss number is where
+  The model runs 100 times (epochs) and the lowest loss number is the epoch where
   the model is fitted and performing at its best!
- 
+  
  <p style="text-align:center;">
     <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/main/TrainingHistoryLossesGraph.png?raw=true">
   
-
  # SilicaInConcentrateActualVSForecastRandomForest
  
  <p style="text-align:center;">
@@ -70,7 +69,6 @@ A deep learning approach using RF (Random Forest Regressor) and LSTM (Long Short
 
 A **RMSE of 0.72** was achieved using the LSTM model. It performed better than the Random Forest model which had 
 a **RMSE of 0.77.**
-
 
 In general, the lower the value of the RMSE the better. Recall that the RMSE is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset. The lower the RMSE, the better a given model is able to “fit” a dataset.[https://www.statology.org/how-to-interpret-rmse/]
 
