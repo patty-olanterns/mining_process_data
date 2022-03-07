@@ -39,7 +39,7 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  <p style="text-align:center;">
     <img width="400" alt="Mineral Content Feed And Flotation Concentrate" src="https://github.com/patty-olanterns/mining_process_data/blob/main/MineralContentFeedAndConcentrate.png?raw=true">
   
-# Training_History_Losses_Graph
+# Training History Losses Graph
   
   The following chart is a breakdown of the LSTM Model and the training losses (MAE - Mean Absolute Error) for 
   training and validation data.
@@ -50,12 +50,14 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  <p style="text-align:center;">
     <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/main/TrainingHistoryLossesGraph.png?raw=true">
   
- # SilicaInConcentrateActualVSForecastRandomForest
+ # Silica in Concentrate Actual VS Forecast Random Forest
+  
+  For the Random Forest method a RMSE of 0.77 was achieved.
  
  <p style="text-align:center;">
     <img width="400" alt="SilicaInConcentrateActualVSForecastRandomForest" src="https://github.com/patty-olanterns/mining_process_data/blob/main/SilicaInConcentrateActualVSForecastRandomForest.png?raw=true">
   
- # Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
+ # Silica in Concentrate Actual VS Forecast LSTM
   
   For the LSTM method (Long Short Term Memory), a RMSE of 0.708 was achieved.  This is lower
   than the result achieved for a RandomForestRegressor model (0.77), and is the better model of
