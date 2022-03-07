@@ -34,7 +34,7 @@ This notebook explores the application of deep learning to forecast gangue (*%si
 # Training_History_Losses_Graph
  
  <p style="text-align:center;">
-    <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/mainn/TrainingHistoryLossesGraph.png?raw=true">
+    <img width="400" alt="Training_History_Losses_Graph" src="https://github.com/patty-olanterns/mining_process_data/blob/main/TrainingHistoryLossesGraph.png?raw=true">
   
 # Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
  
