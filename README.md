@@ -43,7 +43,9 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  
  
  # Conclusion
-A deep learning approach using LSTM was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. The forecasts thus show a promising method for process engineers to make timely assessment of concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
+A deep learning approach using LSTM was implemented to forecast gangue content in flotation concentrate. Excluding *%iron in concentrate* from the features, *%silica in concentrate* were forecasted one hour ahead and with error below 1 (based on RMSE, MAE). As the dataset owner stated in [this post](https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314#434654), MAE and RMSE of 1±0.2 is a satisfactory result. 
+ 
+For this model an RMSE of 0.77 - 0.85 was achieved. While there is room for improvement, the forecasts are a method for process engineers to assess concentrate purity and take corrective actions in advance, especially when purity deviates from the acceptable values.
 
 Finally, although LSTM implementation in this notebook has met the objectives, it will benefit from further exploration:
 - Forecasting with smaller lag timesteps. For example, a 30-minute lag for the features/inputs.
