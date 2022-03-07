@@ -24,27 +24,27 @@ This notebook explores the application of deep learning to forecast gangue (*%si
  # Correlation Heatmap - Gangue vs. Features
  
  <p style="text-align:center;">
-    <img width="400" alt="Gangue Correlation Heatmap" src="https://raw.githubusercontent.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/IronMiningProcessCorrelationHeatmap?raw=true">
+    <img width="400" alt="Gangue Correlation Heatmap" src="https://raw.githubusercontent.com/patty-olanterns/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/IronMiningProcessCorrelationHeatmap.png?raw=true">
   
  # Correlation Heatmap - Gangue vs. Features
  
  <p style="text-align:center;">
-    <img width="400" alt="Gangue Correlation Heatmap" src="https://raw.githubusercontent.com/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/MineralContentFeedAndConcentrate?raw=true">
+    <img width="400" alt="Gangue Correlation Heatmap" src="https://raw.githubusercontent.com/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/MineralContentFeedAndConcentrate.png?raw=true">
   
 # Training_History_Losses_Graph
  
  <p style="text-align:center;">
-    <img width="400" alt="Training_History_Losses_Graph" src="https://raw.githubusercontent.com/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/TrainingHistoryLossesGraph?raw=true">
+    <img width="400" alt="Training_History_Losses_Graph" src="https://raw.githubusercontent.com/mining_process_data/gangue-forecast-in-flotation-concentrate/blob/main/TrainingHistoryLossesGraph.png?raw=true">
   
 # Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM
  
  <p style="text-align:center;">
-    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://raw.githubusercontent.com/mining_process_data/SilicaInConcentrateActualVSForecastLSTM?raw=true">
+    <img width="400" alt="Silica_in_Concentrate_Actual_Values_and_Forecasts_LSTM" src="https://raw.githubusercontent.com/mining_process_data/SilicaInConcentrateActualVSForecastLSTM.png?raw=true">
   
  # SilicaInConcentrateActualVSForecastRandomForest
  
  <p style="text-align:center;">
-    <img width="400" alt="SilicaInConcentrateActualVSForecastRandomForest" src="https://raw.githubusercontent.com/patty-olanterns/mining_process_data/SilicaInConcentrateActualVSForecastRandomForest?raw=true">
+    <img width="400" alt="SilicaInConcentrateActualVSForecastRandomForest" src="https://raw.githubusercontent.com/patty-olanterns/mining_process_data/SilicaInConcentrateActualVSForecastRandomForest.png?raw=true">
  
  
  # Conclusion
