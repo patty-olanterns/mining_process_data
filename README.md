@@ -1,4 +1,16 @@
 
+Note:
+
+This notebook and code was copied. The original content was created by Eduardo Magalhaes (EduardoMagalhãesOliveira) a data scientist and 
+contributor to Kaggle open source code platform. The purpose of copying and editing this notebook was to learn, practice and implement a prediction
+problem using Machine Learning and Deep Learning algorithms using the following languages and libraries
+- Python
+- TensorFlow
+- Keras
+- Pandas
+- Sci-kit Learn
+
+All credit goes to Eduardo Magalhaes. I have edited his programming and work for my own understanding.
 
  <b><p style="text-align:center;">
     <font size ="24" color ="Black">
